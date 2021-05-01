@@ -17,11 +17,9 @@ while counter>0:
     os.system('pause')
     os.system('cls')
 
-print(counter)
-
 if counter == -1:
-    input_menu = 0
-    while input_menu != 6:  
+    exit_menu = False
+    while exit_menu == False:  
         print('----------------------------------')
         print('     PILIH TRANSAKSI YANG ANDA    ')    
         print('             BUTUHKAN             ')  
@@ -54,7 +52,10 @@ if counter == -1:
             print('   LAYANAN INI SEDANG DIPERBAIKI  ')
             print('----------------------------------')  
 
-        os.system('cls')                  
+        elif input_menu == 6:
+            print('TERIMAKASIH SUDAH MENGGUNAKAN ATM PYTHON')
+            exit_menu = True
+            print()
+            os.system('pause')            
 
-else:
-    print('bye')
+        os.system('cls')                    
