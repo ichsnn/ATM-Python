@@ -1,6 +1,5 @@
 import os  
 import method
-from atm import ATM
 
 os.system('cls')
 
@@ -11,9 +10,10 @@ while counter>0:
     print('     SELAMAT DATANG DI ATM PYTHON     ')
     print('--------------------------------------')    
     pin      = int(input('MASUKKAN PIN ANDA : '))
-    print('--------------------------------------')   
+    print()   
     method.cek_pin(pin)    
     counter = method.pin_counter(pin, counter)
+    print('--------------------------------------')    
     os.system('pause')
     os.system('cls')
 
